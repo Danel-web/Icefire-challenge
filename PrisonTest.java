@@ -17,8 +17,8 @@ import static org.junit.Assert.assertTrue;
 public class PrisonTest {
 
     // change these to your name:
-    private static final String MY_FIRST_NAME = "Vladimir";
-    private static final String MY_LAST_NAME = "Morozov";
+    private static final String MY_FIRST_NAME = "Danel";
+    private static final String MY_LAST_NAME = "Mark";
     private static final String MY_KEY_CARD_DATA = MY_FIRST_NAME + "," + MY_LAST_NAME;
 
     private static final String OTHER_PRISONER_CARD_DATA = "Siim,Valdaru";
