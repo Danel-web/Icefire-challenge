@@ -84,7 +84,7 @@ class KeyCardParser {
     }
 
     public boolean allowsEntrance(Person person) {
-        return allowedPersons.union(myCell.AllowedPersons)contains(person);
+        return allowedPersons.union(myCell.AllowedPersons); contains(person);
     }
 
 }

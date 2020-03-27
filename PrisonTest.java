@@ -110,7 +110,7 @@ public class PrisonTest {
         private List<PrisonRoom> rooms = new ArrayList<>();
 
         List<PrisonRoom> generateTestPrison(Person... prisoners) {
-            PrisonRoom room = createRoom();
+            createRoom();
 
             Map<Person, PrisonRoom> cells = new HashMap<>();
             for (Person prisoner : prisoners) {
@@ -134,6 +134,7 @@ public class PrisonTest {
         private PrisonRoom createRoom() {
             HashSet<Person> allowedPersons = new HashSet<>();
             allowedPersons.add(supervisor);
+            allowedPersons.add(prisoner);
             PrisonRoom room = new PrisonRoom(id++, allowedPersons);
             rooms.add(room);
 
