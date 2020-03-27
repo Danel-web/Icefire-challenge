@@ -74,12 +74,17 @@ public class PrisonRoom {
 }
 
 // only this class can be modified
-// public interface should stay the same
+// public interface should stay the same 
+// allow entrance to person by cell
 class KeyCardParser {
 
     public Person read(String cardData) {
         String[] split = cardData.split(",");
         return new Person(split[0], split[1]);
+    }
+
+    public boolean allowsEntrance(Person person) {
+        return allowedPersons.union(myCell.AllowedPersons)contains(person);
     }
 
 }
